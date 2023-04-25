@@ -53,7 +53,7 @@ SMB4_PATCH="${PWD}/files/smb4.11_enable_smb1.patch"
 SYSCTL_CUSTOM_CONF="${PWD}/files/99-custom.conf"
 
 # 20200709 add
-COREMARK="${PWD}/files/coremark.sh"
+#COREMARK="${PWD}/files/coremark.sh"
 
 # 20201024 add
 BAL_ETH_IRQ="${PWD}/files/balethirq.pl"
@@ -131,9 +131,9 @@ LINUX=/zImage
 INITRD=/uInitrd
 
 #  普通版 1800Mhz
-FDT=/dtb/allwinner/sun50i-h6-vplus-cloud.dtb
+#FDT=/dtb/allwinner/sun50i-h6-vplus-cloud.dtb
 #  超频版 2016Mhz
-#FDT=/dtb/allwinner/sun50i-h6-vplus-cloud-2ghz.dtb
+FDT=/dtb/allwinner/sun50i-h6-vplus-cloud-2ghz.dtb
 
 APPEND=root=UUID=${ROOTFS_UUID} rootfstype=btrfs rootflags=compress=zstd:${ZSTD_LEVEL} console=ttyS0,115200n8 no_console_suspend consoleblank=0 fsck.fix=yes fsck.repair=yes net.ifnames=0 cgroup_enable=cpuset cgroup_memory=1 cgroup_enable=memory swapaccount=1
 EOF
